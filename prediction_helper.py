@@ -3,12 +3,12 @@ import pandas as pd
 from joblib import load
 
 # Loading models
-model_rest_practise = load('artifacts\model_rest_practise.joblib')
-model_young_practise = load('artifacts\model_young_practise.joblib')
+model_rest_practise = load('artifacts/model_rest_practise.joblib')
+model_young_practise = load('artifacts/model_young_practise.joblib')
 
 # Loading scaler
-scaler_rest_practise = load('artifacts\scaler_rest_practise.joblib')
-scaler_young_practise = load('artifacts\scaler_young_practise.joblib')
+scaler_rest_practise = load('artifacts/scaler_rest_practise.joblib')
+scaler_young_practise = load('artifacts/scaler_young_practise.joblib')
 
 def preprocess_input(input_dict):
     expected_columns = [
