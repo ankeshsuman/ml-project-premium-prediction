@@ -1,6 +1,7 @@
 # codebasics ML course: codebasics.io, all rights reserverd
 
 import streamlit as st
+import numpy as np
 from prediction_helper import predict
 
 # Define the page layout
