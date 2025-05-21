@@ -1,17 +1,14 @@
 
 import pandas as pd
-import numpy as np
-from joblib import load, dump
+import joblib
 
 # Loading models
-model_rest_practise = load('artifacts/model_rest_practise.joblib')
-model_young_practise = load('artifacts/model_young_practise.joblib')
+model_rest_practise = joblib.load('artifacts/model_rest_practise.joblib')
+model_young_practise = joblib.load('artifacts/model_young_practise.joblib')
 
-dump(model_rest_practise, 'artifacts/artifacts/model_rest_practise.joblib')
-dump(model_young_practise, 'artifacts/model_young_practise.joblib')
 # Loading scaler
-scaler_rest_practise = load('artifacts/scaler_rest_practise.joblib')
-scaler_young_practise = load('artifacts/scaler_young_practise.joblib')
+scaler_rest_practise = joblib.load('artifacts/scaler_rest_practise.joblib')
+scaler_young_practise = joblib.load('artifacts/scaler_young_practise.joblib')
 
 def preprocess_input(input_dict):
     expected_columns = [
